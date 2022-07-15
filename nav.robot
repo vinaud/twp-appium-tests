@@ -31,6 +31,19 @@ Deve acessar a tela de formulários
     Wait Until Element Is Visible    id=io.qaninja.android.twp:id/toolbarTitle
     Element Text Should Be           id=io.qaninja.android.twp:id/toolbarTitle      FORMS
 
+Deve acessar a tela de vingadores
+
+    Wait Until Page Contains         COMEÇAR
+    Click Text                       COMEÇAR
+    Wait Until Element Is Visible    xpath=//android.widget.ImageButton[@content-desc="Open navigation drawer"] 
+
+    Click Element                    xpath=//android.widget.ImageButton[@content-desc="Open navigation drawer"]
+    Wait Until Element Is Visible    id=io.qaninja.android.twp:id/navView  
+   
+    Click Text                       AVENGERS
+    Wait Until Element Is Visible    id=io.qaninja.android.twp:id/toolbarTitle
+    Element Text Should Be           id=io.qaninja.android.twp:id/toolbarTitle      AVENGERS
+
 ***Keywords***
 
 Open Session
