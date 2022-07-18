@@ -4,6 +4,9 @@ Resource    ../resources/base.robot
 Test Setup     Open Session
 Test Teardown  Close Session
 
+***Variables***
+${TOOLBAR_TITLE}   id=io.qaninja.android.twp:id/toolbarTitle
+
 ***Test Cases***
 Deve acessar a tela dialogs
 
@@ -11,8 +14,8 @@ Deve acessar a tela dialogs
     Open Nav 
    
     Click Text                       DIALOGS
-    Wait Until Element Is Visible    id=io.qaninja.android.twp:id/toolbarTitle
-    Element Text Should Be           id=io.qaninja.android.twp:id/toolbarTitle      DIALOGS
+    Wait Until Element Is Visible    ${TOOLBAR_TITLE}
+    Element Text Should Be           ${TOOLBAR_TITLE}      DIALOGS
 
 Deve acessar a tela de formulários
 
@@ -20,8 +23,8 @@ Deve acessar a tela de formulários
     Open Nav  
    
     Click Text                       FORMS
-    Wait Until Element Is Visible    id=io.qaninja.android.twp:id/toolbarTitle
-    Element Text Should Be           id=io.qaninja.android.twp:id/toolbarTitle      FORMS
+    Wait Until Element Is Visible    ${TOOLBAR_TITLE}
+    Element Text Should Be           ${TOOLBAR_TITLE}      FORMS
 
 Deve acessar a tela de vingadores
 
@@ -29,6 +32,6 @@ Deve acessar a tela de vingadores
     Open Nav 
    
     Click Text                       AVENGERS
-    Wait Until Element Is Visible    id=io.qaninja.android.twp:id/toolbarTitle
-    Element Text Should Be           id=io.qaninja.android.twp:id/toolbarTitle      AVENGERS
+    Wait Until Element Is Visible    ${TOOLBAR_TITLE}
+    Element Text Should Be           ${TOOLBAR_TITLE}      AVENGERS
 
