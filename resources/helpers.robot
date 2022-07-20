@@ -14,3 +14,11 @@ Open Nav
     Wait Until Element Is Visible    ${HAMBURGER}
     Click Element                    ${HAMBURGER}
     Wait Until Element Is Visible    ${NAV_VIEW}
+
+Go To Login Form
+    Open Nav 
+    Click Text                      FORMS
+    Wait Until Page Contains        FORMS
+
+    Click Text                      LOGIN
+    Wait Until Page Contains        Fala QA, vamos testar o login?
