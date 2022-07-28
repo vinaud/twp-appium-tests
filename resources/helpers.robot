@@ -62,3 +62,11 @@ Go To Signup Form
 
     Click Text                      CADASTRO
     Wait Until Page Contains        Bem-vindo, crie sua conta.
+
+Go To Avengers List
+    Open Nav 
+    Click Text                      AVENGERS
+    Wait Until Page Contains        AVENGERS
+
+    Click Text                      LISTA
+    Wait Until Page Contains        LISTA
