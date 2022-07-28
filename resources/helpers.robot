@@ -54,3 +54,11 @@ Go To Long Click
 
     Click Text                      CLIQUE LONGO
     Wait Until Page Contains        Botão clique longo
+
+Go To Signup Form
+    Open Nav 
+    Click Text                      FORMS
+    Wait Until Page Contains        FORMS
+
+    Click Text                      CADASTRO
+    Wait Until Page Contains        Bem-vindo, crie sua conta.
